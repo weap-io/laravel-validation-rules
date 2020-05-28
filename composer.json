@@ -1,0 +1,53 @@
+{
+    "name": "weap-io/laravel-validation-rules",
+    "description": "A collection of Laravel validation rules",
+    "keywords": [
+        "weap-io",
+        "laravel-validation-rules"
+    ],
+    "homepage": "https://github.com/weap-io/laravel-validation-rules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weap.io",
+            "email": "hi@weap.io",
+            "homepage": "https://weap.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "globalcitizen/php-iban": "^2.7",
+        "illuminate/support": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.2",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weap\\LaravelValidationRules\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Weap\\LaravelValidationRules\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Weap\\LaravelValidationRules\\ValidationRulesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
