@@ -3,7 +3,7 @@
 namespace Weap\LaravelValidationRules\Tests\Rules;
 
 use Weap\LaravelValidationRules\Tests\TestCase;
-use Weap\LaravelValidationRules\Rules\Hostname;
+use Weap\LaravelValidationRules\Rules\Network\Hostname;
 
 class HostnameTest extends TestCase
 {   

@@ -1,6 +1,6 @@
 <?php
 
-namespace Weap\LaravelValidationRules\Rules;
+namespace Weap\LaravelValidationRules\Rules\Network;
 
 use Illuminate\Contracts\Validation\Rule;
 

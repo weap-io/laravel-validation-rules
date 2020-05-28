@@ -3,7 +3,7 @@
 namespace Weap\LaravelValidationRules\Tests\Rules;
 
 use Weap\LaravelValidationRules\Tests\TestCase;
-use Weap\LaravelValidationRules\Rules\UniqueWhere;
+use Weap\LaravelValidationRules\Rules\Database\UniqueWhere;
 use Weap\LaravelValidationRules\Tests\TestClasses\Models\TestModel;
 
 class UniqueWhereTest extends TestCase

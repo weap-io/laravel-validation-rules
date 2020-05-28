@@ -1,6 +1,6 @@
 <?php
 
-namespace Weap\LaravelValidationRules\Rules;
+namespace Weap\LaravelValidationRules\Rules\Bank;
 
 use Illuminate\Contracts\Validation\Rule;
 

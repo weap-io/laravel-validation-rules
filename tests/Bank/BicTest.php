@@ -3,7 +3,7 @@
 namespace Weap\LaravelValidationRules\Tests\Rules;
 
 use Weap\LaravelValidationRules\Tests\TestCase;
-use Weap\LaravelValidationRules\Rules\Bic;
+use Weap\LaravelValidationRules\Rules\Bank\Bic;
 
 class BicTest extends TestCase
 {

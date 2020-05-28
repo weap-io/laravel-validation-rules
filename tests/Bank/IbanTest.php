@@ -3,7 +3,7 @@
 namespace Weap\LaravelValidationRules\Tests\Rules;
 
 use Weap\LaravelValidationRules\Tests\TestCase;
-use Weap\LaravelValidationRules\Rules\Iban;
+use Weap\LaravelValidationRules\Rules\Bank\Iban;
 
 class IbanTest extends TestCase
 {
