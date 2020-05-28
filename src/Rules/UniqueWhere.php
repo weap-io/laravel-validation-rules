@@ -47,6 +47,6 @@ class UniqueWhere implements Rule
      */
     public function message()
     {
-        return 'The :attribute must be uppercase.';
+        return 'The :attribute must be unique within your entries.';
     }
 }
