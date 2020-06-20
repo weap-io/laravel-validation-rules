@@ -34,7 +34,9 @@ class S3BucketNameTest extends TestCase
     /** @test */
     public function it_does_not_pass_if_bucket_name_has_one_or_more_not_allowed_characters()
     {
-        $this->assertFalse((new S3BucketName)->passes('bucket_name', 'abc$%'));
+        $this->assertFalse((new S3BucketName)->passes('bucket_name', 'abc-'));
+        $this->assertFalse((new S3BucketName)->passes('bucket_name', 'abc--'));
+        $this->assertFalse((new S3BucketName)->passes('bucket_name', 'abc$'));
     }
     
     /** @test */
@@ -60,5 +62,11 @@ class S3BucketNameTest extends TestCase
     {
         $this->assertFalse((new S3BucketName)->passes('bucket_name', '192.168.5.4'));
         $this->assertFalse((new S3BucketName)->passes('bucket_name', '127.0.0.1'));
+    }
+
+    /** @test */
+    public function it_does_not_pass_if_bucket_name_starts_with_sequence_of_not_allowed_characters()
+    {
+        $this->assertFalse((new S3BucketName)->passes('bucket_name', 'xn--'));
     }
 }

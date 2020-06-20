@@ -15,6 +15,10 @@ class S3BucketName implements Rule
      */
     public function passes($attribute, $value)
     {
+        if (substr($value, 0, 4) == 'xn--') {
+            return false;
+        }
+        
         return (bool) (preg_match('/^(?=^.{3,63}$)(?!^(\d+\.)+\d+$)(^(([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])\.)*([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])$)/', $value) == 1);
     }
 
