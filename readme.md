@@ -8,16 +8,6 @@ Install the package:
 composer require weap-io/laravel-validation-rules
 ```
 
-## Services/Aws
-### S3 Bucket name
-Validate an S3 Bucket name
-```php
-use Weap\LaravelValidationRules\Rules\Services\Aws\S3BucketName;
-
-return [
-    'bucket_name' => ['required', new S3BucketName()],
-];
-```
 
 ## Network
 ### Hostname
@@ -49,5 +39,37 @@ return [
 // The input must be a valid port number (0 included)
 return [
     'port' => ['required', new Port($allowZero = true)]
+];
+```
+
+## Bank
+### IBAN
+Validate an IBAN.
+ ```php
+use Weap\LaravelValidationRules\Rules\Bank\Iban;
+
+return [
+    'iban' => ['required', new Iban()]
+];
+ ```
+
+### BIC
+Validate a BIC.
+```php
+use Weap\LaravelValidationRules\Rules\Bank\Bic;
+
+return [
+    'bic' => ['required', new Bic()]
+];
+```
+
+## Services/Aws
+### S3 Bucket name
+Validate an S3 Bucket name
+```php
+use Weap\LaravelValidationRules\Rules\Services\Aws\S3BucketName;
+
+return [
+    'bucket_name' => ['required', new S3BucketName()],
 ];
 ```
