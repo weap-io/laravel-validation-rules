@@ -15,7 +15,7 @@ Validate an S3 Bucket name
 use Weap\LaravelValidationRules\Rules\Services\Aws\S3BucketName;
 
 return [
-    'bucket_name' => ['required', new S3BucketName],
+    'bucket_name' => ['required', new S3BucketName()],
 ];
 ```
 
