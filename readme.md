@@ -1,5 +1,5 @@
 # laravel-validation-rules
-A set of useful validation rules that can be used in your Laravel application.
+A set of useful Laravel validation rules created by [Weap.io](https://weap.io).
 
 
 # Installation
